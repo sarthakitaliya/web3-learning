@@ -10,6 +10,7 @@ import {
 
 import "@solana/wallet-adapter-react-ui/styles.css";
 import Airdrop from "./Airdrop";
+import { ShowSolBalance } from "./ShowSolBalance";
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
               <main className="flex flex-col items-center p-6">
                 <h2 className="text-xl font-semibold text-center">Request Airdrop</h2>
                 <p className="text-sm text-gray-400 mb-4">Maximum of 2 requests every 8 hours</p>
+                <ShowSolBalance />
                 <Airdrop />
               </main>
             </div>
