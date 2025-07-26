@@ -1,4 +1,5 @@
 import { useConnection, useWallet } from "@solana/wallet-adapter-react";
+import { LAMPORTS_PER_SOL } from "@solana/web3.js";
 import { useState } from "react";
 import { toast } from "sonner";
 
@@ -18,7 +19,7 @@ export default function Airdrop() {
     }
 
     toast.promise(
-      connection.requestAirdrop(wallet.publicKey, amount * 1000000000),
+      connection.requestAirdrop(wallet.publicKey, amount * LAMPORTS_PER_SOL),
       {
         loading: `Sending ${amount} SOL...`,
         success: () => {
