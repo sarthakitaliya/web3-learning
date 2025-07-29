@@ -10,14 +10,21 @@ const FaucetPage = () => {
   return (
     <div className="min-h-screen bg-[#1e1e1e] text-white flex flex-col items-center justify-center px-4 py-10">
       <div className="w-full max-w-2xl bg-[#2a2a2a] rounded-md shadow-lg border border-gray-700">
-        <div className="flex flex-col items-center p-6 border-b border-gray-600 relative">
+        <div className="flex sm:flex-row justify-between flex-col items-center gap-4 p-6 border-gray-600 relative">
           <Link
             to="/sendtoken"
-            className=" absolute left-5 top-5 bg-[#512DA8] hover:bg-[#6B5B9A] text-white text-sm p-2 rounded-md  cursor-pointer"
+            className="  bg-[#512DA8] hover:bg-[#6B5B9A] text-white text-sm p-2 rounded-md  cursor-pointer"
           >
             Go to Send Tokens
           </Link>
-
+          <Link
+            to="/signmessage"
+            className=" bg-[#512DA8] hover:bg-[#6B5B9A] text-white text-sm p-2 rounded-md  cursor-pointer"
+          >
+            Go to Sign Message
+          </Link>
+        </div>
+        <div className="flex flex-col items-center p-6 border-b border-gray-600">
           <h1 className="text-2xl font-bold mb-1">💦 Sol Faucet 💦</h1>
           <p className="text-sm text-gray-400 mb-4">
             This tool does{" "}
