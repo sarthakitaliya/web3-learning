@@ -4,9 +4,8 @@
  - [Installing Foundry](https://petal-estimate-4e9.notion.site/Installing-Foundry-1547dfd10735803b8533e368400858b7)
  - [Std libraries](https://petal-estimate-4e9.notion.site/Std-libraries-1587dfd1073580f596b2c315a7f49576)
 
-## steps
+## init
 
-### init
 ```
     forge init --template https://github.com/foundry-rs/forge-template <template_name>
 ```
