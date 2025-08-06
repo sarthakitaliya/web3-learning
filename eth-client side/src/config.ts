@@ -6,9 +6,9 @@ export const config = createConfig({
   connectors:[
     injected(),
   ],
-  transports: {
+  transports: { 
     [mainnet.id]: http(
-      "https://eth-mainnet.g.alchemy.com/v2/3rfmMavadnzN8nDMYPCHgAviwLd4FSDs"
+      import.meta.env.VITE_ETH_PROVIDER_URL
     ),
   },
 });
